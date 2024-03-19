@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Tugas 4 JS Eksternal</title>
+</head>
+
+<style>
+    .table_a {
+        background-color: white;
+        width: 35%;
+        text-align: justify;
+        margin: auto;
+        overflow: hidden;
+        border-collapse: collapse;
+        border-radius: 5px;
+        color: black;
+    }
+
+    form th {
+        background-color: lightpink;
+        color: maroon;
+        text-align: center;
+        font-weight: bold;
+        padding: 10px;
+        border: 1px solid black;
+    }
+
+    form td {
+        padding: 10px;
+        border: 1px solid black;
+    }
+
+    #hasil {
+        padding-top: 60px;
+        width: 100%;
+    }
+
+    .justify-content-center {
+        display: flex;
+        justify-content: center;
+    }
+
+    input {
+        width: 70%;
+    }
+
+    .data_a {
+        justify-content: center;
+        display: flex;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <form id="input">
+        <table class="table_a">
+            <tr>
+                <th colspan="2">
+                    <h1>Input Pegawai</h1>
+                </th>
+            </tr>
+
+            <tr>
+                <td><label for="">Nama Pegawai</label></td>
+                <td><input type="text" name="namapegawai" id=""></td>
+            </tr>
+
+            <tr>
+                <td><label for="">Jabatan Pegawai</label></td>
+                <td><select name="jabatanpegawai" id=""></select></td>
+            </tr>
+
+            <tr>
+                <td><label for="">Status Pegawai</label></td>
+                <td><select name="statuspegawai" id=""></select></td>
+            </tr>
+
+            <tr>
+                <th colspan="2">
+                    <input style="width: 20%; padding: 1%;"  type="button" name="" id="" value="Cetak" onclick="data()">
+                </th>
+            </tr>
+        </table>
+    </form>
+    
+    <div class='justify-content-center'>
+        <center id="hasil"></center>
+    </div>
+    <script src="js/skrip.js"></script>
+</body>
+</html>
